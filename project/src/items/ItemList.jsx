@@ -3,7 +3,7 @@ import EachItem from './EachItem'
 
 const ItemList = ({items = []}) => {
   return (
-    <div>
+    <ul>
       {
         items && items.length ? 
         items.map((eachitem) => (
@@ -12,7 +12,7 @@ const ItemList = ({items = []}) => {
         )
         : null
       }
-    </div>
+    </ul>
   )
 }
 
