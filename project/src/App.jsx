@@ -1,14 +1,12 @@
-import ItemList from "./items/ItemList"
-import data from "./data/data"
-
+import ItemList from "./items/ItemList";
+import data from "./data/data";
 
 function App() {
-
   return (
     <>
-     <ItemList items={data}/>
+      <ItemList items={data} />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

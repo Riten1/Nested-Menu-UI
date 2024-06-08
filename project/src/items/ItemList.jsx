@@ -1,19 +1,14 @@
-import React from 'react'
-import EachItem from './EachItem'
+import React from "react";
+import EachItem from "./EachItem";
 
-const ItemList = ({items = []}) => {
+const ItemList = ({ items = [] }) => {
   return (
-    <ul>
-      {
-        items && items.length ? 
-        items.map((eachitem) => (
-          <EachItem eachitem={eachitem}/>
-        )
-        )
-        : null
-      }
+    <ul className="inline-block">
+      {items && items.length
+        ? items.map((eachitem) => <EachItem eachitem={eachitem} />)
+        : null}
     </ul>
-  )
-}
+  );
+};
 
-export default ItemList
+export default ItemList;
